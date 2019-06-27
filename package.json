@@ -1,0 +1,28 @@
+{
+  "name": "tutorial",
+  "version": "1.0.0",
+  "description": "this is a fullstack tutorial for authentication and authorisation also part of the article on medium",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "backend",
+    "nodejs",
+    "reactjs",
+    "redux",
+    "frontend",
+    "full stack"
+  ],
+  "author": "Edwin Ismail",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "concurrently": "^4.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.1"
+  }
+}
