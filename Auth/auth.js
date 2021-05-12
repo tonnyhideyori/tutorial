@@ -23,7 +23,7 @@ route.post("/app/signup", async (req, res) => {
   user.password = await bcrypt.hash(user.password, salt);
   const token = user.AuthToken();
   await user.save();
-  res.header(token).send({ name: user.name, id: user._id });
+  res.header("token",token).send({ name: user.name, id: user._id });
 });
 route.post("/app/signin", async (req, res) => {
   //validate user input

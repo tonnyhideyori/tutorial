@@ -5,7 +5,7 @@ const auth = require("./Auth/auth");
 const secret = require("./Auth/secret");
 //connecting to mongodb
 mongoose
-  .connect("mongodb://localhost/Fullstack", { useNewUrlParser: true })
+  .connect("mongodb://mongo:27017/Fullstack", { useNewUrlParser: true })
   .then(console.log("connected to mongodb"))
   .catch(err => console.error(`not connected to mongodb ${err}`));
 const app = express();
